@@ -1,6 +1,7 @@
 //CAJERO AUTOMÁTICO
 //El saldo inicial de la cuenta es de $1000
 let saldo = 1000;
+let historial = [];
 //El usuario puede ingresar un monto a retirar
 const retiro = prompt('Ingrese el monto a retirar: ');
 //Se verifica si el monto solicitado es menor o igual al saldo disponible
