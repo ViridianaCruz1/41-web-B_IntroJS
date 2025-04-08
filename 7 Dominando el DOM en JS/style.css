@@ -1,0 +1,64 @@
+body {
+    background-color: #e8e8ff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(190, 211, 235);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4c7caf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 20%;
+}
+
+button:hover {
+    background-color: #456ea0;
+}
+
+.password-display {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px dashed #ccc;
+    background-color: #f9f9f9;
+    word-break: break-all;
+    font-weight: bold;
+}
+
+.passwordLength{
+    text-align: center;
+    width: 25rem;
+    height: 2rem;
+}
+
+.passLengthBox{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    
+    gap: 20px;
+}
+
+.passwordGenerator{
+    margin-top: 20px;
+    width: 50%;
+}
