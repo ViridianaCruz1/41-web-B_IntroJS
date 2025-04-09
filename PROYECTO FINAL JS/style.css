@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #444;
+    background-color: #f3f3f3;
+    height: 100vh;
+    padding: 2rem;
+  }
+  
+  /* HEADER */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+  }
+  
+  .welcome {
+    font-size: 1.9rem;
+    font-weight: 800;
+  }
+  
+  .login {
+    display: flex;
+  }
+  
+  .login__input {
+    border: none;
+    padding: 0.5rem 2rem;
+    font-size: 1.6rem;
+    font-family: inherit;
+    text-align: center;
+    width: 15rem;
+    border-radius: 10rem;
+    margin-right: 1rem;
+    color: inherit;
+    border: 1px solid #fff;
+    transition: all 0.3s;
+  }
+  
+  .login__btn {
+    border: none;
+    background: none;
+    font-size: 2.2rem;
+    color: inherit;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+
+  /* GRID */
+  .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .containerOperations{
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .containerInfo{
+    grid-column: span 2;
+    grid-row: 1;
+  }
+
+
+  /* OPERATIONS */
+  .operation {
+    display: none;
+    /* display: flex; */
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+    border-radius: 1rem;
+    padding: 2.5rem;
+    color: #333;
+    width: 25rem;
+    margin: 2.5rem;
+  }
+  
+  .operation--balance {
+    background-image: linear-gradient(to top left, #a4c9fd, #59a9ff);
+  }
+  .operation--deposit {
+    background-image: linear-gradient(to top left, #b7f7de, #a8ff5c);
+  }
+  .operation--withdraw {
+    background-image: linear-gradient(to top left, #ffceda, #fc787f);
+  }
+  
+  h2 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .form__btn {
+    border: none;
+    border-radius: 0.5rem;
+    color: #333;
+    font-size: 2rem;
+    width: 5rem;
+    height: 5rem;
+  }
+
+  /* INFORMATION ON SCREEN*/
+  .info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    font-size: 1.5rem;
+
+    border-radius: 1rem;
+    padding: 3rem;
+    color: #333;
+    margin: 3rem;
+
+    background-color: white;
+  }
+
+  .info--balance{
+    display: none;
+  }
+
+  .info--deposit{
+    display: none;
+  }
+
+  .info--withdraw{
+    display: none;
+  }
+
+  .form__input {
+    width: 90%;
+    border-color: black;
+    background-color: rgba(255, 255, 255, 0.4);
+    font-size: 1.5rem;
+    text-align: center;
+    color: #333;
+    padding: 0.3rem 1rem;
+    border-radius: 0.7rem;
+    margin-left: 20px;
+  }
+
+  .sendAmount__btn{
+    border: none;
+    margin-left: 20px;
+    background-color: white;
+    font-size: 2rem;
+  }
+
