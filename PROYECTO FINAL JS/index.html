@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final: Introducción a JS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav>
+        <h1 class="welcome">Ingresa para comenzar</h1>
+        <form class="login">
+            <input
+            type="text"
+            placeholder="Nombre"
+            class="login__input login__input--user"
+            />
+            <input
+            type="text"
+            placeholder="Contraseña"
+            maxlength="10"
+            class="login__input login__input--pin"
+            />
+            <button class="login__btn" type="submit">→</button>
+        </form>
+    </nav>
+
+<div class="container">
+    <div class="containerOperations">
+        <div class="operation operation--balance">
+            <h2>Consultar saldo</h2>
+            <button class="form__btn form__btn--balance">→</button>
+        </div>
+
+        <div class="operation operation--deposit">
+            <h2>Depositar monto</h2>
+            <button class="form__btn form__btn--deposit">→</button>
+        </div>
+        
+        <div class="operation operation--withdraw">
+            <h2>Retirar monto</h2>
+            <button class="form__btn form__btn--withdraw">→</button>
+        </div>
+    </div>
+    
+    <div class="containerInfo">
+        <div class="info info--balance">
+            <h3 id="currentBalance"></h3>
+            <h5 id="lastMovement"></h5>
+        </div>
+    
+        <div class="info info--deposit">
+            <h3>Escribe el monto a depositar:</h3>
+            <input             
+            type="number"
+            placeholder="En pesos mexicanos MXN"
+            class="form__input form__input--deposit"
+            maxlength="6"
+        />
+        <button class="sendAmount__btn sendAmount__btn--deposit">→</button>
+        </div>
+    
+        <div class="info info--withdraw">
+            <h3>Escribe el monto a retirar:</h3>
+            <input             
+            type="number"
+            placeholder="En pesos mexicanos MXN"
+            class="form__input form__input--withdraw"
+            maxlength="6"
+            />
+            <button class="sendAmount__btn sendAmount__btn--withdraw">→</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
